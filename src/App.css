@@ -1,0 +1,57 @@
+/* src/App.css */
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-header {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.highlight {
+  color: #42b883;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.form-container {
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.wide-input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  background-color: #42b883;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.result-container {
+  text-align: center;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
