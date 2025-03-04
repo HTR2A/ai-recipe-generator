@@ -6,7 +6,7 @@ ai-recipe-generator is a serverless web application that:
 
 Uses AWS Amplify to host a React front end built with Vite.
 Allows users to sign in via AWS Cognito (configured with Amplify Auth).
-Lets users input ingredients to generate AI-driven recipes.
+Let's users input ingredients to generate AI-driven recipes.
 Invokes Amazon Bedrock’s AI model—in this case, the Amazon Titan Text Lite v1 model—via a custom GraphQL query.
 Work Completed
 Frontend Setup:
@@ -44,7 +44,8 @@ Copy
       "message": "Not Authorized to access askBedrock on type Query"
     }
   ]
-}```
+}
+```
 This indicates that the request isn’t being made with valid Cognito credentials (a valid user token) even though your client is set to use authMode: "userPool".
 Troubleshooting So Far:
 
@@ -59,6 +60,7 @@ Ensure the user signs in properly so that the Amplify client can use the user po
 Test Directly in AppSync Console:
 
 Run a test query (as an authenticated user) in the AppSync console:
+```
 graphql
 Copy
 query {
@@ -67,6 +69,7 @@ query {
     error
   }
 }
+```
 This will help determine if the issue is with the client or the backend configuration.
 Add Debug Logging:
 
