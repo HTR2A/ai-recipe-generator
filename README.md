@@ -36,7 +36,7 @@ The backend sandbox deployment appears successful.
 However, when running the GraphQL query (either via the app or directly in the AppSync console), you get an error:
 json
 Copy
-{
+```{
   "data": { "askBedrock": null },
   "errors": [
     {
@@ -44,7 +44,7 @@ Copy
       "message": "Not Authorized to access askBedrock on type Query"
     }
   ]
-}
+}```
 This indicates that the request isn’t being made with valid Cognito credentials (a valid user token) even though your client is set to use authMode: "userPool".
 Troubleshooting So Far:
 
